@@ -1,0 +1,190 @@
+*{
+          /* Delete the webpage borders */
+          padding: 0;
+          margin: 0;
+          box-sizing: 0;
+          list-style: none;
+          box-sizing: border-box;
+}
+
+
+/** Navigation bar **/
+
+nav{
+          /* 
+          Widht 100% cover all the visible screen (do not use wv)
+          Fixed help to matain the nav there*/
+          height: 10vh;
+          width: 100%;
+          position: fixed;
+}
+
+nav img{
+          margin-top: 1vh;
+          margin-left: 5%;
+          height: 110%;
+          
+}
+
+nav ul{
+          float: right;
+          margin-right: 2%;
+}
+
+nav ul li{
+          /*inline-block organize them horizotaly*/
+          padding: 0 3vw;
+          display: inline-block;
+          line-height: 10vh;
+          margin: 0 5px;
+}
+
+nav ul li a{
+          padding: 1vh 1vw;
+          font-size: 18px;
+}
+
+a.active, a:hover{
+          /*cursor pointer change the cursor*/
+          background:#F5F5F5;
+          padding: 1vh 1vw;
+          color: #CA9A8E;
+          border-radius: 3px;
+          cursor: pointer;
+}
+
+/** Responsive slider bar **/
+
+.checkbtn{
+          font-size: 30px;
+          float: right;
+          line-height: 12vh;
+          margin-right: 8vw;
+          cursor: pointer;
+          display: none;
+}
+
+#check{
+          display:none
+}
+
+
+.about-me{
+          /* size of the about-me section
+          select the image as background
+          rezise */
+
+          height: 100vh;
+          width: 100%;
+          background: url(/img/kristaps-ungurs-RbCTHyZqIGE-unsplash.jpg) ;
+          background-size: cover;
+}
+
+.about-me-box{
+
+          padding-top: 200px;
+}
+.organizer{
+          
+          display: flex;
+          justify-content: space-around;
+}
+.text {
+          width: 50vw;
+          border-left: thick solid #849994;
+          margin-top: 10vh;
+          margin-left: 10vw;
+          padding-left: 3vw;
+          float: left;
+}
+
+.text p{
+          font-size: large;
+          color: #849994;
+}
+
+.about-me-box div img{
+}
+
+
+
+.proyects{
+          margin: auto;
+          overflow: hidden;
+}
+.proyects-container{
+          padding-top: 100px;
+          display: inline-flex;
+          width: 100%;
+}
+.proyect{
+          margin-left: 10%;
+          width: 20%;
+}
+.proyect img{
+          max-width: 30px;
+}
+
+
+.tittle{
+          /* Color, size and margin of all tittles */
+          color: #404447;
+          font-size: 60px;
+}
+
+
+
+@media (max-width: 950px){
+
+          label.logo{
+                   font-size: 30px;
+                   padding-left: 50px; 
+          }
+          nav ul li a{
+                    font-size: 16px;
+          }
+}
+
+@media (max-width: 850px){
+          .checkbtn{
+                    
+                    display: block;
+          }
+
+          ul{
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    background-color: #CA9A8E;
+                    top: 80px;
+                    left: -100%;
+                    text-align: center;
+                    transition: all .5s;
+          }
+
+          nav ul li{
+                    display: block;
+                    margin: 50px 0;
+                    line-height: 30px;
+          }
+
+          nav ul li a{
+                    font-size: 20px;
+          }
+
+          a:hover, a.active{
+                    background: none;
+                    color: black;
+                    
+
+          }
+
+          #check:checked ~ ul{
+                    left: 0;
+
+          }
+
+          section{
+
+          }
+}
