@@ -69,12 +69,14 @@ a.active, a:hover{
 }
 
 
+/** About me section **/
+
 .about-me{
           /* size of the about-me section
           select the image as background
           rezise */
 
-          height: 100vh;
+          height: 120vh;
           width: 100%;
           background: url(/img/kristaps-ungurs-RbCTHyZqIGE-unsplash.jpg) ;
           background-size: cover;
@@ -82,20 +84,23 @@ a.active, a:hover{
 
 .about-me-box{
 
-          padding-top: 200px;
+          padding-top: 20vh;
 }
-.organizer{
+
+.about-me-box .container{
           
           display: flex;
           justify-content: space-around;
 }
+
 .text {
+          border-left: thick solid #798f89;
+          height: fit-content;
           width: 50vw;
-          border-left: thick solid #849994;
           margin-top: 10vh;
           margin-left: 10vw;
           padding-left: 3vw;
-          float: left;
+          background-color: rgba(226, 237, 229, 0.7);;
 }
 
 .text p{
@@ -103,9 +108,29 @@ a.active, a:hover{
           color: #849994;
 }
 
-.about-me-box div img{
+.about-me-box .container img{
+          height: 40vh;
 }
 
+.skills-icons-box{
+          margin-left: 20vh;
+          height: 10vh;
+          width: 40vw;
+}
+
+.skills-icons-box img{
+/*          width: 30%;
+          padding: 4%;
+*/
+
+          padding: 0 3vh;
+          width: 18vh;
+          height: 18vh;
+}
+
+
+
+/** Proyects section **/
 
 
 .proyects{
@@ -122,14 +147,16 @@ a.active, a:hover{
           width: 20%;
 }
 .proyect img{
-          max-width: 30px;
+          max-width: 20vw;
 }
 
 
 .tittle{
           /* Color, size and margin of all tittles */
+          margin: 10vh 0 5vh 5vw;
           color: #404447;
           font-size: 60px;
+          text-align: center;
 }
 
 
@@ -183,8 +210,35 @@ a.active, a:hover{
                     left: 0;
 
           }
+          
 
-          section{
+          .about-me-box .container{
+                    flex-flow: column-reverse;
+          }
 
+
+          .about-me-box .container img{
+                    margin: 0 30%;
+                    height: 40%;
+                    width: 40%;
+          }
+
+          .about-me-box .text{
+                    margin: 10% auto;
+                    
+          }
+
+          .skills-icons-box{
+                    display: flex;
+                    margin: 0;
+                    width: 100%;
+                    height: 10vw;
+                    justify-content: space-evenly;
+          }
+
+          .skills-icons-box img{
+                    padding: 0 3vh;
+                    width: 18vh;
+                    height: 18vh;
           }
 }
