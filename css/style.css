@@ -2,11 +2,17 @@
           /* Delete the webpage borders */
           padding: 0;
           margin: 0;
-          box-sizing: 0;
           list-style: none;
-          box-sizing: border-box;
 }
 
+
+.tittle{
+    /* Color, size and margin of all tittles */
+    margin: 10vh 0 5vh 5vw;
+    color: #404447;
+    font-size: 60px;
+    text-align: center;
+}
 
 /** Navigation bar **/
 
@@ -44,7 +50,7 @@ nav ul li a{
           font-size: 18px;
 }
 
-a.active, a:hover{
+a.active, .about-me a:hover{
           /*cursor pointer change the cursor*/
           background:#F5F5F5;
           padding: 1vh 1vw;
@@ -78,12 +84,13 @@ a.active, a:hover{
 
           height: 120vh;
           width: 100%;
-          background: url(/img/kristaps-ungurs-RbCTHyZqIGE-unsplash.jpg) ;
+          background: url(../img/kristaps-ungurs-RbCTHyZqIGE-unsplash.jpg) ;
           background-size: cover;
 }
 
 .about-me-box{
-
+        
+          box-sizing: border-box;
           padding-top: 20vh;
 }
 
@@ -113,15 +120,18 @@ a.active, a:hover{
 }
 
 .skills-icons-box{
-          margin-left: 20vh;
-          height: 10vh;
-          width: 40vw;
+    
+box-sizing: border-box;
+    
+margin-left: 20vh;
+    
+height: 10vh;
+    
+width: 40vw;
 }
 
 .skills-icons-box img{
-/*          width: 30%;
-          padding: 4%;
-*/
+
 
           padding: 0 3vh;
           width: 18vh;
@@ -132,34 +142,102 @@ a.active, a:hover{
 
 /** Proyects section **/
 
-
-.proyects{
-          margin: auto;
-          overflow: hidden;
+#projects{
+    margin: 0;
+    background-color: lightcoral;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
 }
-.proyects-container{
-          padding-top: 100px;
-          display: inline-flex;
-          width: 100%;
+  
+#projects ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
 }
-.proyect{
-          margin-left: 10%;
-          width: 20%;
+  
+#projects ul.slider{
+    position: relative;
+    width: 100%;
+    height: 500px;
 }
-.proyect img{
-          max-width: 20vw;
+  
+#projects ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+  
+#projects ul.slider li img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
 }
 
-
-.tittle{
-          /* Color, size and margin of all tittles */
-          margin: 10vh 0 5vh 5vw;
-          color: #404447;
-          font-size: 60px;
-          text-align: center;
+#projects ul.slider li{
+    display: grid;
 }
 
+#projects div{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    position: absolute;
 
+    width: 80%;
+    height: 60%;
+    top: 10vh;
+    left: 20%;
+    transform: translate(-12%, 0);
+}
+
+#projects ul.slider li section{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 3vw;
+    margin: 2vw;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#projects ul.slider li button{
+    margin: 40%;
+}
+
+#projects ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+  
+#projects ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+  
+#projects .menu{
+    text-align: center;
+    margin: 20px;
+}
+  
+#projects .menu li{
+    display: inline-block;
+    text-align: center;
+}
+  
+#projects .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+/** Responsive **/
 
 @media (max-width: 950px){
 
@@ -178,7 +256,7 @@ a.active, a:hover{
                     display: block;
           }
 
-          ul{
+          .about-me ul{
                     position: fixed;
                     width: 100%;
                     height: 100vh;
