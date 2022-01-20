@@ -237,17 +237,156 @@ width: 40vw;
     font-size: 20px;
     border-radius: 100%;
 }
+
+/** Blog **/
+
+.blog * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.blog body{
+    height: 100vh;
+}
+
+.blog{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 50vh;
+    margin-top: 10%;
+}
+
+.video{
+    width: 50%;
+    padding: 0 5%;
+}
+
+.video .video-tittle{
+    padding: 0 0 0 60%;
+    font-size: 1.5rem;
+    color: #666666;
+}
+
+.video .video-shadow{
+    height: 100%;
+    width: 50%;
+
+    background: #66666662;
+}
+
+.video iframe{
+    position: relative;
+    height: 80%;
+    width: 90%;
+    top: -95%;
+    left: 10%;
+
+}
+
+.journal{
+    width: 50%;
+}
+
+.journal .slider-container{
+    width: 80%;
+    height: 70%;
+    
+    background: #849994;
+}
+
+.journal .slider-container h2.slider-tittle{
+    padding: 3% 0 0 5%;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/*another way to make the green box
+    box-shadow: 60px -16px teal; */
+
+.journal .slide{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 100%;
+    height: 110%;
+    overflow: scroll;
+    box-shadow: 3px 3px 5px gray;
+
+}
+
+/** Scrollbar custom**/
+
+.journal .slide::-webkit-scrollbar {
+  width: 10px;
+}
+
+.journal .slide::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+.journal .slide::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+.journal .slide::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+.journal .slide > div{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: black;
+    background: #ffff;
+    padding: 0 0 10px 20px;
+    border-bottom: 2px solid black;
+}
+
+.journal .slide > div h1{
+    
+    font-size: 2rem;
+}
+
+.journal .slide > div p{
+    font-size: 1rem;
+}
+
+
 /** Responsive **/
 
 @media (max-width: 950px){
 
-          label.logo{
-                   font-size: 30px;
-                   padding-left: 50px; 
-          }
-          nav ul li a{
-                    font-size: 16px;
-          }
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px; 
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    .blog{
+        height: 140vh;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10% 10%;
+    }
+    .video{
+        width: 80%;
+        height: 40%;
+    }
+    .journal{
+        padding-left: 10%;
+        width: 80%;
+        height: 45%;
+    }
 }
 
 @media (max-width: 850px){
@@ -319,4 +458,18 @@ width: 40vw;
                     width: 18vh;
                     height: 18vh;
           }
+
+    .blog{
+        margin: 10% 5%;
+    }
+    .video{
+        width: 90%;
+        height: 40%;
+    }
+    .journal{
+        padding-left: 10%;
+        width: 90%;
+        height: 45%;
+    }
+
 }

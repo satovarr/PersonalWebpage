@@ -2,134 +2,152 @@
 <html lang="en">
 
 <head>
-          <meta charset="utf-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Santiago Tovar</title>
-          <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
-          <link rel="stylesheet" href="css/style.css">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Tovar</title>
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
+    <section class="about-me">
+        <header>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <img src="./img/logo.svg" class="logo" alt="logo">
+
+                <ul>
+                    <li><a>About me</a></li>
+                    <li><a>Proyects</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a href="./lab.html"> Lab</a></li>
+                </ul>
+            </nav>
+
+        </header>
 
 
-          <section class="about-me">
-                    <header>
-                              <nav>
-                                        <input type="checkbox" id="check">
-                                        <label for="check" class="checkbtn">
-                                                  <i class="fas fa-bars"></i>
-                                        </label>
+        <section class="about-me-box">
+            <div class="container">
+                <div class="text">
+                    <p style="padding: 2vh 0 2vh 0;">I'm a software engineering student
+                        based in Bogotá
+                        with experience in
+                        software
+                        development and web design.</p>
 
-                                        <img src="./img/logo.svg" class="logo" alt="logo">
+                    <p style="padding: 5vh 0 2vh 0;">I've work on web development. and
+                        data structure.</p>
+                </div>
 
-                                        <ul>
-                                                  <li><a>About me</a></li>
-                                                  <li><a>Proyects</a></li>
-                                                  <li><a>Blog</a></li>
-                                                  <li><a href="./lab.html"> Lab</a></li>
-                                        </ul>
-                              </nav>
+                <div class="image">
+                    <img src="./img/portrait-picture.png" alt="" class="portrait-picture">
+                </div>
 
-                    </header>
-
-
-                    <section class="about-me-box">
-                              <div class="container">
-                                        <div class="text">
-                                                  <p style="padding: 2vh 0 2vh 0;">I'm a software engineering student
-                                                            based in Bogotá
-                                                            with experience in
-                                                            software
-                                                            development and web design.</p>
-
-                                                  <p style="padding: 5vh 0 2vh 0;">I've work on web development. and
-                                                            data structure.</p>
-                                        </div>
-
-                                        <div class="image">
-                                                  <img src="./img/portrait-picture.png" alt="" class="portrait-picture">
-                                        </div>
-
-                              </div>
-                              <div class="skills-icons-box">
-                                        <img src="./img/python-icon.svg" alt="" class="skill-icon">
-                                        <img src="./img/js-icon.svg" alt="" class="skill-icon">
-                                        <img src="./img/skills-icon.svg" alt="" class="skill-icon">
-                              </div>
+            </div>
+            <div class="skills-icons-box">
+                <img src="./img/python-icon.svg" alt="" class="skill-icon">
+                <img src="./img/js-icon.svg" alt="" class="skill-icon">
+                <img src="./img/skills-icon.svg" alt="" class="skill-icon">
+            </div>
 
 
+        </section>
+
+
+
+    </section>
+
+    <div id="projects">
+        <ul class="slider">
+            <li id="slide1">
+                <img src="./img/table.jpg" alt="">
+                <div>
+                    <section class="info">
+                        <h3>CryptoUnal</h3>
+                        <p>Crypto wallet app with account managemnt and transaction tools.</p>
                     </section>
+                    <button>Click</button>
+                </div>
+            </li>
+            <li id="slide2">
+                <img src="./img/table.jpg" alt="">
+                <div>
+                    <section class="info">
+                        <h3>Project 2</h3>
+                        <p>Text of the project</p>
+                    </section>
+                    <button>Click</button>
+                </div>
+            </li>
+            <li id="slide3">
+                <img src="./img/table.jpg" alt="">
+                <div>
+                    <section class="info">
+                        <h3>Project 3</h3>
+                        <p>Text of the project</p>
+                    </section>
+                    <button>Click</button>
+                </div>
+            </li>
+        </ul>
 
+        <ul class="menu">
+            <li>
+                <a href="#slide1">1</a>
+            </li>
+            <li>
+                <a href="#slide2">2</a>
+            </li>
+            <li>
+                <a href="#slide3">3</a>
+            </li>
+        </ul>
 
+    </div>
 
-          </section>
+    <section class="blog">
+        <div class="video">
+            <h2 class="video-tittle">Watch my last video</h2>
+            <div class="video-shadow"></div>
+            <iframe src="https://www.youtube.com/embed/CSdpk6NzvhY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
 
-        <div id="projects">
-            <ul class="slider">
-                <li id="slide1">
-                    <img src="./img/table.jpg" alt="">
-                    <div>
-                        <section class="info">
-                            <h3>CryptoUnal</h3>
-                            <p>Crypto wallet app with account managemnt and transaction tools.</p>
-                        </section>
-                        <button>Click</button>
-                    </div>
-                </li>
-                <li id="slide2">
-                    <img src="./img/table.jpg" alt="">
-                    <div>
-                        <section class="info">
-                            <h3>Project 2</h3>
-                            <p>Text of the project</p>
-                        </section>
-                        <button>Click</button>
-                    </div>
-                </li>
-                <li id="slide3">
-                    <img src="./img/table.jpg" alt="">
-                    <div>
-                        <section class="info">
-                            <h3>Project 3</h3>
-                            <p>Text of the project</p>
-                        </section>
-                        <button>Click</button>
-                    </div>
-                </li>
-            </ul>
-        
-            <ul class="menu">
-                <li>
-                    <a href="#slide1">1</a>
-                </li>
-                <li>
-                    <a href="#slide2">2</a>
-                </li>
-                <li>
-                    <a href="#slide3">3</a>
-                </li>
-            </ul>
-        
         </div>
-
-          <section class="blog">
-                    <h1 class="tittle">Blog</h1>
-                    <div class="youtube-container">
-                              <p class="youtube-title">Watch my last video</p>
-                              <div class="youtube-background-square"></div>
-                              <div class="youtube-window"></div>
+        <div class="journal">
+            <div class="slider-container">
+                <h2 class="slider-tittle">Read my journal</h2>
+                <div class="slide">
+                    <div>
+                        <h1>Blog 1</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste minus aliquid sunt veritatis
+                            animi ad repudiandae et est neque amet? Voluptatum doloribus omnis pariatur magni, non ipsam
+                            nam! Nemo, vitae.</p>
                     </div>
-
-                    <div class="blog-container">
-                              <div class="blog-background-square">
-                                        <p class="blog-tittle"></p>
-                              </div>
-                              <div class="blog-window"></div>
-
+                    <div>
+                        <h1>Blog 2</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dicta quos a molestiae
+                            quam sunt illo quia, rerum omnis, laborum culpa excepturi corrupti, est vero magnam
+                            pariatur! Itaque, blanditiis esse.</p>
                     </div>
-          </section>
+                    <div>
+                        <h1>Blog 3</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta minus esse sapiente
+                            alias dolor beatae mollitia unde modi, fuga ad nisi, excepturi delectus quidem velit
+                            veritatis inventore quaerat eius.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
