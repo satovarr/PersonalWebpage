@@ -124,6 +124,7 @@ a.active, .about-me a:hover{
 box-sizing: border-box;
     
 margin-left: 20vh;
+
     
 height: 10vh;
     
@@ -132,10 +133,11 @@ width: 40vw;
 
 .skills-icons-box img{
 
+padding: 0 3vh;
 
-          padding: 0 3vh;
-          width: 18vh;
-          height: 18vh;
+width: 18vh;
+
+height: 18vh;
 }
 
 
@@ -144,7 +146,7 @@ width: 40vw;
 
 #projects{
     margin: 0;
-    background-color: lightcoral;
+    background-color: white;
     width: 100%;
     padding: 0;
     box-sizing: border-box;
@@ -176,6 +178,7 @@ width: 40vw;
     width: inherit;
     height: inherit;
     object-fit: cover;
+    background-color: #849994;
 }
 
 #projects ul.slider li{
@@ -205,7 +208,12 @@ width: 40vw;
 }
 
 #projects ul.slider li button{
-    margin: 40%;
+    margin: auto 40%;
+    height: 20%;
+    width: 40%;
+    border-radius: 4px;
+    font-weight: 700;
+    color: #555;
 }
 
 #projects ul.slider li:first-child {
@@ -236,6 +244,17 @@ width: 40vw;
     height: 20px;
     font-size: 20px;
     border-radius: 100%;
+}
+
+#projects .info h3{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20%;
+}
+
+#projects .info p{
+    color: grey;
+    font-size: 1.5rem;
 }
 
 /** Blog **/
@@ -399,7 +418,7 @@ width: 40vw;
                     position: fixed;
                     width: 100%;
                     height: 100vh;
-                    background-color: #CA9A8E;
+                    background-color: #e3efe7;
                     top: 80px;
                     left: -100%;
                     text-align: center;
@@ -408,8 +427,11 @@ width: 40vw;
 
           nav ul li{
                     display: block;
-                    margin: 50px 0;
+                    margin: 80px 0;
                     line-height: 30px;
+                    font-size: 2rem;
+                    color: #404447;
+                    font-weight: 700;
           }
 
           nav ul li a{
@@ -451,12 +473,14 @@ width: 40vw;
                     width: 100%;
                     height: 10vw;
                     justify-content: space-evenly;
+                    padding-bottom: 0;
           }
 
           .skills-icons-box img{
-                    padding: 0 3vh;
-                    width: 18vh;
-                    height: 18vh;
+                    padding: 0;
+                    width: 10vh;
+                    height: 10vh;
+                    margin-bottom: 10vh;
           }
 
     .blog{
