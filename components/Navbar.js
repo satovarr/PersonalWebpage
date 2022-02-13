@@ -1,25 +1,27 @@
 import Link from "next/link";
+import Image from 'next/image';
 
 const Navbar = () => (
     <>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div className="container">
-                <Link href="/"><a className="navbar-brand">Simple portfolio</a></Link> 
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <Link href="/blog"><a className="nav-link">Blog</a></Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link href="/github"><a className="nav-link">Github</a></Link>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <header className="nav-bar">
+            <nav>
+                <Image
+                    src="/logo.svg"
+                    height={100} 
+                    width={100} 
+                    alt="Logoimg"
+                />
+                <ul>
+                    <li>
+                        <Link href="/projects">
+                            <a>Proyects</a></Link>
+                    </li>
+                    <li><Link href="/blog">
+                        <a>Blog</a></Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </>
 )
 

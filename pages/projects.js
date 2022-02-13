@@ -1,10 +1,10 @@
 import BasicLayout from "../components/BasicLayout";
 
 
-const Github = () => (
+const Projects = () => (
     <BasicLayout>
-        <h1>Github</h1>
+        <h1>Projects</h1>
     </BasicLayout>
 )
 
-export default Github
+export default Projects;

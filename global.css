@@ -1,0 +1,176 @@
+*{
+          /* Delete the webpage borders */
+          padding: 0;
+          margin: 0;
+          list-style: none;
+}
+
+/* Navigation bar*/
+
+nav{
+          /* 
+          Widht 100% cover all the visible screen (do not use wv)
+          Fixed help to matain the nav there*/
+          height: 10vh;
+          width: 100%;
+          position: fixed;
+          padding-left: 30px;
+          padding-top: 10px;
+}
+
+nav .image{
+          margin-top: 1vh;
+          margin-left: 5%;
+          height: 110%;
+          
+}
+
+nav ul{
+          float: right;
+          margin-right: 2%;
+}
+
+nav ul li{
+          /*inline-block organize them horizotaly*/
+          padding: 0 3vw;
+          display: inline-block;
+          line-height: 10vh;
+          margin: 0 5px;
+}
+
+nav ul li a{
+          padding: 1vh 1vw;
+          font-size: 18px;
+          text-decoration: none;
+          color: white;
+}
+
+a.active, nav a:hover{
+          /*cursor pointer change the cursor*/
+          background:#F5F5F5;
+          padding: 1vh 1vw;
+          color: #CA9A8E;
+          border-radius: 3px;
+          cursor: pointer;
+}
+
+/* Profile */
+
+.profile-box{
+    background: url(/profile-bk.png) ;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    padding-top: 20vh;
+}
+
+.profile-box .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-box img{
+    padding: auto;
+    width: min-content;
+    height:min-content;
+    filter: drop-shadow(7px 9px 12px rgba(0, 0, 0, 0.32));
+}
+
+.profile-box h1{
+    margin-top: 10px;
+    font-family: Serif Caption;
+    font-size: 55px;
+    color: #849994;
+}
+
+.profile-box p{
+    font-family: PT Serif;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.025em;
+    text-transform: capitalize;
+    color: #C4C4C4;
+}
+
+/* Skills */
+
+.skills-box{
+    background: #849994;
+    height: 90vh;
+    width: 100%;
+    padding-top: 20vh;
+}
+
+.skills-box .langs{
+    background: #39514B;
+    border-radius: 25px;
+    height: 100px;
+    width: 40vw;
+    position: absolute;
+    top: calc(100vh - 50px);
+    left: 30vw;
+    transition: 1s;
+}
+
+.skills-box ul{
+    display: flex;
+    justify-content: space-evenly;
+    transition: 2s;
+}
+
+.skills-box li{
+    padding-top: 20px;
+}
+
+.skills-box li img{
+    width: fit-content;
+    height: 60px;
+}
+
+.skills-box .frameworks{
+    position: absolute;
+    left: 45vw;
+    height: 65vh;
+    padding-top: 30px;
+    width: 120%;
+    text-align: center;
+
+    margin: auto;
+    background: rgba(0, 0, 0, .25);
+    color: white;
+    display: none;
+}
+
+#python-tab{
+    top: 0;
+}
+
+#js-tab{
+    top: 1vh;
+}
+
+#go-tab{
+    top: 1.3vh;
+}
+
+.skills-box li:hover > .frameworks{
+    display: block;
+}
+
+/*No me acuerdo*/
+
+.overflow{
+    height: 50%;
+    overflow: hidden;
+}
+
+.overflow .card-img-top{
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+
+}
+
+.overflow .card-img-top:hover{
+    transform: scale(1.2);
+}
