@@ -158,6 +158,64 @@ a.active, nav a:hover{
     display: block;
 }
 
+/* Blog*/
+
+
+.video-box{
+    background: #404447 ;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    padding-top: 20vh;
+}
+
+.video-box .container{
+    background-color: rgba(102, 102, 102, 0.3);
+    display: flex;
+    height: 70vh;
+    gap: 20px;
+}
+
+.video-box .main-video{
+    background-color: rgba(102, 102, 102, 0.3);
+    width: 50%;
+    padding: 10px 10px;
+}
+
+.video{
+    width: 50vw;
+}
+
+.video .video-tittle{
+    position: absolute;
+    padding: 20px 0 0 60%;
+    font-size: 1.5rem;
+    color: #F4F3EF;
+    left: -30%;
+}
+
+.video .video-shadow{
+    height: 100%;
+    width: 50%;
+    background: #66666662;
+}
+
+.video iframe{
+    position: relative;
+    margin-right: 10px;
+    margin-top: 30px;
+    height: 80%;
+    width: 90%;
+    top: -95%;
+    left: 10%;
+
+}
+
+.video-slider{
+    width: 50%;
+    padding: 56px 20px 0px 0px;
+}
+
 /*No me acuerdo*/
 
 .overflow{
@@ -174,3 +232,58 @@ a.active, nav a:hover{
 .overflow .card-img-top:hover{
     transform: scale(1.2);
 }
+
+
+.carousel{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel__video{
+    width: 100%;
+    height: 90%;
+}
+
+.carousel__track-container{
+    /*background: green;*/
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 100%;
+    transition: transform 250ms ease-in ;
+}
+
+.carousel__slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button{
+    position: absolute;
+    top: 50%;
+    height: 90%;
+    width: 10%;
+    transform: translateY(-55%);
+    margin: -3px;
+    background: rgba(255, 255, 255);
+    border: 0;
+}
+
+.carousel__button--left{
+}
+
+.carousel__button--right{
+    left: 91%;
+}
+
+.is-hidden {display: none;}

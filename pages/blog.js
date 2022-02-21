@@ -1,9 +1,11 @@
 import BasicLayout from "../components/BasicLayout";
+import VideoPanel from "../components/videoPanel";
 
 
 const Blog = () => (
     <BasicLayout>
-        <h1>Blog</h1>
+        <VideoPanel />
+        
     </BasicLayout>
 )
 

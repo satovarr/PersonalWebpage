@@ -28,7 +28,7 @@ const BasicLayout = ({ children }) => {
 
             <footer className="bg-dark text-light text-center">
                 <div className="container p-4">
-                    <h1>&copy; Ryan Ray Poerfolio</h1>
+                    <h1>&copy; Santiago Tovar portfolio</h1>
                     
                 </div>
             </footer>
